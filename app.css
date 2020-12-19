@@ -329,8 +329,11 @@ i {
 }
 
 /* detail page start */
+.article-detail__body{
+  width:800px;
+}
 .detail-box > div{
-  width: 800px;
+  width: 900px;
 }
 .title{
   font-size:2rem;
