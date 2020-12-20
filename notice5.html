@@ -1,0 +1,747 @@
+<head>
+<!-- Scroll-Out link -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- 구글 소유권확인 링크 -->
+<meta name="google-site-verification"
+	content="2B8YNq9Ajz0kCyWZv7u3PaPi-ugB7q0dJIda2B_Ii58" />
+
+<!-- JQUERY link -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- font awesome link -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+<!-- Splitting link -->
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-PGF4TS961N"></script>
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-5184039387564779" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PGF4TS961N');
+</script>
+</head>
+
+
+<div class="total-box flex flex-dr-c">
+	<header class="head-bar flex flex-jc-c flex-ai-c">
+		<nav class="side-menu flex">
+			<li><a href=""><i class="fas fa-bars"></i></a></li>
+		</nav>
+		<div class="flex flex-jc-c flex-g-1">
+			<nav class="menu-box">
+				<ul class="flex flex-dr-r flex-ai-c">
+					<li><a href="index.html" class="flex"><i
+							class="fas fa-home"></i></a></li>
+					<li class="flex"><a href="#" class="flex"><span>board</span></a>
+						<ul class="">
+							<!-- 	<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
+									class="fab fa-free-code-camp"></i> <span>all</span>
+							</a></li>
+							<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
+									class="fas fa-comment-medical"></i> <span>free list</span>
+							</a></li>
+							<li><a href="#" class="flex flex-jc-c flex-ai-c "> <i
+									class="far fa-clipboard"></i> <span>notice list</span>
+							</a></li> -->
+							<li><a href="article_list_notice_1.html" class="flex flex-jc-c flex-ai-c "><span>Web cording</span></a></li>
+						</ul></li>
+					<li><a href="#" class="flex"><span>link</span></a>
+					<li />
+					<li><a href="#" class="flex"><span>about</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="search-box">
+			<search class="flex flex-jc-end"> <span class="flex">
+				<div class="search">
+					<input type="text" placeholder=" ">
+					<div>
+						<svg>
+                <use xlink:href="#path">
+                  </svg>
+					</div>
+				</div> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 160 28" id="path">
+                <path
+						d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+						transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+              </symbol>
+            </svg>
+			</span> </search>
+		</nav>
+		<link rel="stylesheet" href="app.css" />
+	</header>
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<main class="flex flex-jc-c flex-g-1">
+
+	<detail class="detail-box flex-jc-c flex">
+	<div class="flex flex-dr-c">
+		<div class="title-bar">
+			<div class="">
+				<a href="article_list_notice_1.html">board > Web cording > </a>
+			</div>
+		</div>
+		<subject class="title">
+		<ul class="">
+			<li><a href="#">CSS: CSS 스크롤 화살표 표기</a></li>
+		</ul>
+		</subject>
+		<info class="information">
+		<ul class="flex flex-dr-r">
+			<li class="flex-g-1"><a href="#">작성자: D.K</a></li>
+			<li><a href="#">조회수: 356</a></li>
+			<li><a href="#">작성일: 2020-12-20 11:23:16</a></li>
+		</ul>
+		</info>
+		<contents class="contents">
+		<ul class="flex">
+			<il class="article-detail__body"> 
+
+## 1\. 화살표
+
+![화살표](http://rwdb.kr/images/2019/190605_01.png)
+
+간단한 화살표 만의 패턴에서 흔히 볼 수있는 `border`지정한 요소를 `transform: rotate(-45deg);`이지 회전시킨 것입니다 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 2\. 화살표 × 서클
+
+![화살표 × 서클](http://rwdb.kr/images/2019/190605_02.png)
+
+이곳은 방금 화살표 서클을 추가 한 것으로, CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 3\. 화살표 × 원 × 파문
+
+![화살표 × 원 × 파문](http://rwdb.kr/images/2019/190605_03.gif)
+
+방금 전의 “화살표 × 서클”조금 움직임을 붙인 것으로, 파문이 확산 효과를 붙인 것입니다.  
+구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb 3s infinite;
+  animation: sdb 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+
+## 4\. 화살표 × 애니메이션 # 1
+
+![화살표 × 애니메이션 # 1](http://rwdb.kr/images/2019/190605_04.gif)
+
+화살표에 일정 간격으로 위치가 아래에 조금 어긋나는 애니메이션을 더한 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+```
+
+## 5\. 화살표 × 애니메이션 # 2
+
+![화살표 × 애니메이션 # 2](http://rwdb.kr/images/2019/190605_05.gif)
+
+이곳은 위에서 아래로 화살표가 이동하면서 자연스럽게 사라질 것으로, CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 70px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+```
+
+## 6\. 화살표 × 애니메이션 # 3
+
+![화살표 × 애니메이션 # 3](http://rwdb.kr/images/2019/190605_06.gif)
+
+이쪽도 앞서와 마찬가지로 화살표가 위에서 아래로 이동하면서 사라져가는 것입니다 만, 또한 빙글 빙글 회전하는 움직임을 붙인 것입니다.  
+구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 70px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+```
+
+## 7\. 화살표 × 애니메이션 # 4
+
+![화살표 × 애니메이션 # 4](http://rwdb.kr/images/2019/190605_07.gif)
+
+이곳은 여러 화살표를 사용하여 패턴의 것으로하고있는 것은 단지 각각의 위치를 이동 배치 한 화살표 표시 · 비 표시하고있다뿐입니다 만, `animation-delay`에서 시간을 늦추는 것으로 이러한 모양이됩니다.  
+이 구현에 관한 HTML은 지금까지의 것과는 조금 달리 HTML과 CSS 각각을 다음과 같이 설명합니다.
+
+`HTML`
+
+```
+<a href="#"><span></span><span></span><span></span>Scroll</a>
+
+```
+
+`CSS`
+
+```
+a {
+  padding-top: 80px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+
+## 8\. 마우스
+
+![마우스](http://rwdb.kr/images/2019/190605_08.png)
+
+화살표 이외의 것이라고 스크롤 버튼으로 배치되어있는 것을 아래 보이는 경우가 많다 마우스를 구현하고 본 것으로 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+```
+
+## 9\. 마우스 × 화살표
+
+![마우스 × 화살표](http://rwdb.kr/images/2019/190605_09.png)
+
+이곳은 방금 마우스 아래에 화살표를 추가 한 것으로, 구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 80px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  content: '';
+  margin-left: -9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 10\. 마우스 × 애니메이션
+
+![마우스 × 애니메이션](http://rwdb.kr/images/2019/190605_10.gif)
+
+이곳은 마우스 스크롤을 격려하는 애니메이션을 더해 보면 한 것으로, 구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+ </il>
+		</ul>
+		</contents>
+		<bottom>
+		<ul class="flex">
+			<li>추천수: 156</li>
+			<li class="flex-g-1"></li>
+			<li class="hover-underline "><a
+				class="${article-detail__link-prev-article-class}"
+				href="notice7.html">&lt; 이전글</a></li>
+			<li class="hover-underline"><a
+				href="article_list_notice_1.html">목록</a></li>
+			<li class="hover-underline "><a
+				class="${article-detail__link-next-article-class}"
+				href="notice4.html"> 다음글 &gt;</a></li>
+		</ul>
+		</bottom>
+		<div id="disqus_thread"></div>
+		<script>
+			/**
+			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			 */
+			(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://dkey.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>
+			Please enable JavaScript to view the <a
+				href="https://disqus.com/?ref_noscript">comments powered by
+				Disqus.</a>
+		</noscript>
+	</div>
+	</detail>
+</main>
+
+<footer class="bottom-bar con-min-width">
+	<div class="con flex flex-ai-c">
+		<a href="./" class="logo logo--mini flex flex-ai-c"> <i
+			class="fab fa-jenkins"></i> <span>Developers</span>
+		</a>
+		<div class="bottom-bar__site-info">Lorem ipsum dolor, sit amet
+			consectetur adipisicing elit. Ad impedit totam voluptas ex aliquam
+			blanditiis. Quos praesentium blanditiis nostrum voluptatum. Itaque
+			impedit explicabo porro amet cupiditate nemo maiores fuga quibusdam?</div>
+	</div>
+</footer>
+<script src="app.js"></script>
+</div>
