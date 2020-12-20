@@ -330,7 +330,7 @@ naming span:nth-of-type(10) {
   background-color:white;  
   margin-top: 150px;
   width:100%;
-  z-index:0;
+/*   z-index:0; */
 }
 .intro-section {
   text-align: center;
@@ -387,11 +387,13 @@ naming span:nth-of-type(10) {
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end;  
+  z-index: 10 !important;
 }
 .content > .paragraph {
   grid-row: 2 / 3;
-  line-height: 1.5;
+  line-height: 1.5;  
+  z-index: 10 !important;
 }
 .heading {
   font-size: 2.75em;
@@ -445,7 +447,7 @@ naming span:nth-of-type(10) {
 .intro-heading {
   font-weight: 700;
 }
-body,
+.total-box,
 html {
   height: 100%;
   width: 100%;
@@ -465,10 +467,13 @@ html {
   align-items: flex-end;
   justify-content: center;
   height: 93vh;
-  width:100%
+  width:100%;
+  z-index:1.2;
+}
+.arrow-down > a span{  
 }
 .arrow-down span{
-  font-weight:30px;
+  font-weight:bold;
   display: flex;
   width: 1.5em;
   height: 1.5em;
