@@ -51,25 +51,16 @@
 			<li><a href=""><i class="fas fa-bars"></i></a></li>
 		</nav>
 		<div class="flex flex-jc-c flex-g-1">
-			<nav class="menu-box">
-				<ul class="flex flex-dr-r flex-ai-c">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
 					<li><a href="index.html" class="flex"><i
 							class="fas fa-home"></i></a></li>
 					<li class="flex"><a href="#" class="flex"><span>board</span></a>
-						<ul class="">
-							<!-- 	<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
-									class="fab fa-free-code-camp"></i> <span>all</span>
-							</a></li>
-							<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
-									class="fas fa-comment-medical"></i> <span>free list</span>
-							</a></li>
-							<li><a href="#" class="flex flex-jc-c flex-ai-c "> <i
-									class="far fa-clipboard"></i> <span>notice list</span>
-							</a></li> -->
+						<ul class="">					
 							<li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
 						</ul></li>
 					<li><a href="#" class="flex"><span>link</span></a>
-					<li />
+					</li>
 					<li><a href="#" class="flex"><span>about</span></a></li>
 				</ul>
 			</nav>
@@ -135,9 +126,9 @@
 
 페이지 안에 다른 서버에 있는 이미지나 페이지 등의 파일을 연결시킬 때 사용하는 경우입니다.
 
-<a href="[http://XXXXX.co.kr](http://XXXXX.co.kr)">사이트바로가기</a>
+`<a href="[http://XXXXX.co.kr](http://XXXXX.co.kr)">사이트바로가기</a>`
 
-<img src="[http://XXXX.co.kr/images/logo.jpg](http://XXXX.co.kr/images/logo.jpg)" alt="혜정스블로그">
+`<img src="[http://XXXX.co.kr/images/logo.jpg](http://XXXX.co.kr/images/logo.jpg)" alt="혜정스블로그">`
 
 일반적으로 하나의 웹페이지 또는 사이트를 제작할 때,
 
@@ -145,7 +136,7 @@
 
 ​
 
-[##_Image|kage@7Ki1E/btqP119h3fI/myliVGnZaiUi6MkCTVMBiK/img.gif|alignCenter|data-top="1597" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7Ki1E%2FbtqP119h3fI%2FmyliVGnZaiUi6MkCTVMBiK%2Fimg.gif)
 
 **(1)현재 파일을 기준으로 동일 위치로 연결되는 경우**
 
@@ -153,7 +144,7 @@
 
 index.html 파일에 favicon.png 를 연결시키는 코딩을 하려고 합니다.
 
-[##_Image|kage@vFFoe/btqPW0jt3RM/vX9xEqmKnSECQxJKfQmWn1/img.gif|alignCenter|data-top="1919" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvFFoe%2FbtqPW0jt3RM%2FvX9xEqmKnSECQxJKfQmWn1%2Fimg.gif)
 
 index.html 파일이 저장된 위치를 기준으로
 
@@ -161,7 +152,7 @@ favicon.png 파일은 동일한 위치에 저장되어 있기 때문에 파일�
 
 \-- index.html 파일  소스 중​
 
-<link rel="icon" type="image/png" href="favicon.png">
+`<link rel="icon" type="image/png" href="favicon.png">`
 
 **(2) 현재 파일을 기준으로 하위폴더로 연결되는 경우**
 
@@ -169,7 +160,7 @@ favicon.png 파일은 동일한 위치에 저장되어 있기 때문에 파일�
 
 index.html 파일 내부에 images폴더에 있는 logo.gif를 연결시키는 코딩을 하려고 합니다.
 
-[##_Image|kage@cBurNS/btqPZKAceF8/Szxke8oS4PZMHdfxH3O6oK/img.gif|alignCenter|data-top="2492" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcBurNS%2FbtqPZKAceF8%2FSzxke8oS4PZMHdfxH3O6oK%2Fimg.gif)
 
 index.html 파일이 저장된 위치를 기준으로 logo.gif 파일을 찾아갈 수 있도록 경로를 지정합니다.
 
@@ -179,7 +170,7 @@ index.html 파일이 저장된 위치를 기준으로 logo.gif 파일을 찾아�
 
 \-- index.html 파일  소스 중
 
-<img src="images/logo.gif" alt="혜정스">
+`<img src="images/logo.gif" alt="혜정스">`
 
 **(3) 현재 파일을 기준으로 상위폴더로 연결되는 경우**
 
@@ -187,7 +178,7 @@ index.html 파일이 저장된 위치를 기준으로 logo.gif 파일을 찾아�
 
 style.css 파일 내부에 images폴더에 있는 logo.gif를 배경이미지로 연결시키는 코딩을 하려고 합니다.
 
-[##_Image|kage@bKpg1Z/btqPWYeXPKv/kEVcox7uvwm857yPv6Qvl0/img.gif|alignCenter|data-top="3156" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbKpg1Z%2FbtqPWYeXPKv%2FkEVcox7uvwm857yPv6Qvl0%2Fimg.gif)
 
 style.css 파일이 저장된 위치를 기준으로 logo.gif 파일을 찾아갈 수 있도록 경로를 지정합니다.
 
@@ -205,7 +196,7 @@ style.css 파일이 저장된 위치를 기준으로 logo.gif 파일을 찾아�
 
 똑같은 파일을 아래와 같이 pages 폴더를 만들고 index.html을 이동시켜 저장하였다면
 
-[##_Image|kage@bzNNd1/btqPRBdxWvn/x8M3ATVyPVbGCKJa8K4Gok/img.gif|alignCenter|data-top="3851" data-origin-width="0" data-origin-height="0" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzNNd1%2FbtqPRBdxWvn%2Fx8M3ATVyPVbGCKJa8K4Gok%2Fimg.gif)
 
 코딩을 어떻게 바뀔까요?
 
@@ -237,15 +228,15 @@ index.html 파일을 기준으로 logo.gif 파일을 연결시키기 때문에 �
 
      -**현재 문서와 동일 위치에 있는 자원을 연결시킬 때**:파일명과 확장자 정보를 기재함
 
-         ex) <a href="info.html"> , <img src="logo.gif">
+         ex) `<a href="info.html"> , <img src="logo.gif">`
 
      -**현재 문서를 기준으로 하위폴더 안에 있을 때**: 폴더명 + 슬래쉬 (/) +파일명과 확장자 를 기재함
 
-         ex) <a href="pages/info.html"> , <link rel="stylesheet" href="css/style.css">,<img src="images/main/logo.gif">
+         ex) `<a href="pages/info.html"> , <link rel="stylesheet" href="css/style.css">,<img src="images/main/logo.gif">`
 
       -**현재 문서를 기준으로 상위 폴더에 있을 때**:  상위 폴더 한 개를 벗어날 때 마다 ../ 를 사용함
 
-         ex) <a href="../pages/info.html"> , <link rel="stylesheet" href="../css/style.css">, <img src="../../logo.gif"> </il>
+         ex) `<a href="../pages/info.html"> , <link rel="stylesheet" href="../css/style.css">, <img src="../../logo.gif">` </il>
 		</ul>
 		</contents>
 		<bottom>
@@ -289,8 +280,8 @@ index.html 파일을 기준으로 logo.gif 파일을 연결시키기 때문에 �
 	</detail>
 </main>
 
-<footer class="bottom-bar con-min-width">
-	<div class="con flex flex-ai-c">
+<footer class="bottom-bar ">
+	<div class="con flex flex-ai-c flex-jc-c">
 		<a href="./" class="logo logo--mini flex flex-ai-c"> <i
 			class="fab fa-jenkins"></i> <span>Developers</span>
 		</a>

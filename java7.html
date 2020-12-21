@@ -51,25 +51,16 @@
 			<li><a href=""><i class="fas fa-bars"></i></a></li>
 		</nav>
 		<div class="flex flex-jc-c flex-g-1">
-			<nav class="menu-box">
-				<ul class="flex flex-dr-r flex-ai-c">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
 					<li><a href="index.html" class="flex"><i
 							class="fas fa-home"></i></a></li>
 					<li class="flex"><a href="#" class="flex"><span>board</span></a>
-						<ul class="">
-							<!-- 	<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
-									class="fab fa-free-code-camp"></i> <span>all</span>
-							</a></li>
-							<li><a href="#" class="flex flex-jc-c flex-ai-c"> <i
-									class="fas fa-comment-medical"></i> <span>free list</span>
-							</a></li>
-							<li><a href="#" class="flex flex-jc-c flex-ai-c "> <i
-									class="far fa-clipboard"></i> <span>notice list</span>
-							</a></li> -->
+						<ul class="">					
 							<li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
 						</ul></li>
 					<li><a href="#" class="flex"><span>link</span></a>
-					<li />
+					</li>
 					<li><a href="#" class="flex"><span>about</span></a></li>
 				</ul>
 			</nav>
@@ -183,7 +174,7 @@ public class Recursion_Test3
 
 ▼ 함수를 살짝 수정해보겠습니다. Function Method는 매개변수 num을 받고 if 구문에 의해 분기가 되고 있습니다. 매개변수 값이 0일 경우 return을 하고0이 아닐 경우 "반갑습니다"를 출력하고 num - 1에 해당하는 값을 매개변수로 전달하고 있습니다. 여기서 num 값이 0일 경우 return을 하게 되는 구문이 이 재귀 함수의  Base Case 구간이 됩니다. 해당 재귀 함수의 호출을 그림으로 보면 아래와 같습니다.
 
-[##_Image|kage@uIuOh/btqPqlVQuL5/hdJDxApC8SigUbySMDSN5k/img.png|alignCenter|srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99FDDF4C5CA4311809DFD6" width="690" height="388" data-origin-width="690" data-origin-height="388" data-ke-mobilestyle="widthContent"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99FDDF4C5CA4311809DFD6)
 
 ▼ 매개변수 num의 값이 0 일 때 함수가 return이 됩니다. 결과적으로 출력물은 총 5번이 출력이 됩니다.
 
@@ -217,7 +208,7 @@ public class Recursion_Test2
 
 ▼ num이 1이면 그냥 1을 return을 하고 함수가 종료됩니다. 1이 아닐 경우 현재 num 값에 Funtion(num-1) 결과로 리턴되는 값을 더하여 리턴을 하게 됩니다. 풀이를 해보자면 5 + 1~4까지의 합이 되는 셈입니다. 매개변수 값이 4가 넘어가게 되는 경우에는 4 + 1~3까지의 합이 되는 거죠. 
 
-[##_Image|kage@bwvpYt/btqPAtrj5qx/Zfm2ckYrKN9g7KACTI3KF1/img.png|alignCenter|srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F99967F3F5CA4343F0268B0" width="690" height="388" data-origin-width="690" data-origin-height="388" data-ke-mobilestyle="widthContent"|||_##] </il>
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F99967F3F5CA4343F0268B0) </il>
 		</ul>
 		</contents>
 		<bottom>
@@ -261,8 +252,8 @@ public class Recursion_Test2
 	</detail>
 </main>
 
-<footer class="bottom-bar con-min-width">
-	<div class="con flex flex-ai-c">
+<footer class="bottom-bar ">
+	<div class="con flex flex-ai-c flex-jc-c">
 		<a href="./" class="logo logo--mini flex flex-ai-c"> <i
 			class="fab fa-jenkins"></i> <span>Developers</span>
 		</a>
