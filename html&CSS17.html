@@ -13,11 +13,11 @@
 	content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
 
 <!--본인의 홈페이지가 링크됐을때 대표로 제목-->
-<meta property="og:title" content="funAndCoding::자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기" />
+<meta property="og:title" content="funAndCoding::css 박스 안 넘치는 글 자르기" />
 
 <!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
 <meta property="og:description"
-	content="funAndCoding::자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기" />
+	content="funAndCoding::css 박스 안 넘치는 글 자르기" />
 
 <!--본인의 홈페이지 주소 링크-->
 <meta property="og:url" content="phoneus.net">
@@ -188,91 +188,251 @@
 	<div class="flex flex-dr-c con-min-width">
 		<div class="title-bar">
 			<div class="">
-				<a href="article_list_java_1.html">board > java > </a>
+				<a href="article_list_html&CSS_1.html">board > html&CSS > </a>
 			</div>
 		</div>
 		<subject class="title">
 		<ul class="">
 
 
-			<li><a href="#">자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기</a></li>
+			<li><a href="#">css 박스 안 넘치는 글 자르기</a></li>
 		</ul>
 		</subject>
 		<info class="information">
 		<ul class="flex flex-dr-r">
 			<li class="flex-g-1"><a href="#">작성자: D.K</a></li>
-			<li><a href="#">조회수: 57</a></li>
-			<li><a href="#">작성일: 2020-12-20 15:39:04</a></li>
+			<li><a href="#">조회수: 654</a></li>
+			<li><a href="#">작성일: 2020-12-23 19:40:28</a></li>
 		</ul>
 		</info>
 		<contents class="contents">
 		<ul class="flex">
 			<script type="text/x-template">
-# 아스키 코드 
+고정된 너비만을 제공하는 레이아웃에서는 서버단에서 화면에 출력할 글자수를 미리 가늠하며 디자인하기가 수월합니다. 레이아웃이 유동적인 너비를 가지거나 서버 스크립트쪽에 접근할 수 없어 글자수를 제어하기 곤란할 경우에는 아래에서 설명하는 방법들이 추천됩니다.
 
-미국에서 표준화가 추진된 정보교환용 7bit 부호로 정의합니다. 1962년 안시(ANSI)가 정의한 미국 표준 정보교환 코드이며 1963년 미국표준협회(ASA)에 의해 결정되어 미국의 표준부호가 되었습니다. 이 코드는 7비트의 이진수 조합으로 만들어져 총 128개의 부호를 표현합니다. 아스키코드의 처음 32개(0~31)는 프린터나 전송 제어용으로 사용되고 나머지는 숫자와 로마글자 및 도량형 기호와 문장기호를 나타냅니다. 아스키코드는 7자리의 2진코드인데 1비트의 패리티 비트를 추가하여 8비트로 많은 컴퓨터에 사용되고 있습니다.
+### 한 줄 단위로 글자 자르기
 
-다음은 아스키코드 표 입니다.
+처음으로 적용해 볼 것은 한 줄, 혹은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비에 맞게
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcQj4My%2FbtqOqUXWdmV%2FmOUfnQAPkYAzj1NfjYYtH1%2Fimg.png)
+**한 줄 단위로**
 
-# 유니코드 
+자르는 법이다. 이는 여러가지 CSS 속성들을 조합하여 조건을 맞추는 일부터 시작된다.
 
-시간이 지나가면서 영어나 숫자 그리고 기본적인 기호뿐만 아니라 그 나라, 그 언어에서 쓰는 다양한 문자들을 처리하려면 1바이트로 정의된 아스키 코드를 확장할 필요가 있게 됩니다. 유니코드는 이런 아스키코드의 한계성을 해소할 수 있는 체계로 만들어진 코드입니다. 각 나라별 언어를 모두 표현하기 위해 나온 코드 체계가 유니코드(unicode)입니다. 유니코드는 사용중인 운영체제, 프로그램, 언어에 관계없이 문자마다 고유한 코드 값을 제공하는 새로운 개념의 코드입니다. 언어와 상관없이 모든 문자를 16비트로 표현하므로 최대 65,536자까지 포현할 수 있습니다. 자바는 모든 문서를 유니코드로 처리합니다. 유니코드표는 구할 수 없었습니다. 유니코드안에 속해있는 문자가 너무 많기 때문입니다.
+#### 출력될 너비 조정하기
 
-# 아스키코드, 유니코드를 문자나 숫자로 변환하기
+CSS로 글자 자르기를 위해서는 글자가 출력될 너비가 필요하다. 기본적으로  **display** 속성의 `inline` 값과 같이 요소의 너비를 가질 수 없는 경우에는 이를 너비를 가질 수 있게 변경해야 한다.
 
-문자 -> 숫자 
+CSS
 
-```java
-import java.util.Scanner;
-
-public class Ascii_Change {
-    public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-		
-	System.out.println("알파벳을 입력해주세요");
-	char alpa = sc.nextLine().charAt(0);
-	int ialpa = (int)alpa;
-		
-	System.out.println(ialpa);
-    }
+```css
+.target {
+    display: block;
 }
+
 ```
 
-숫자 -> 문자 
+  
 
-```java
-import java.util.Scanner;
+요소를 `block` 값으로 변경했기에 자동적으로 요소의 너비는 부모 너비의 100%를 차지하도록 변경된다. 만약 `inline-block` 과 같이 콘텐츠에 따라 유동적인 너비를 가진다면 직접 요소의 너비를 설정해야 한다. 즉, 일정한 고정된 너비를 가지는 것이 전제 조건이다.
 
-public class Ascii_Change {
-    public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-		
-	System.out.println("숫자를 입력해주세요");
-	int alpa = sc.nextInt();
-	char calpa = (char)alpa;
-		
-	System.out.println(calpa);
-    }
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
 }
+
 ```
+
+#### 줄바꿈을 없애기
+
+너비가 지정된 요소라도 글자수가 해당 너비를 넘어서게 되면 자동으로 줄바꿈이 이루어진다. 이 것은 [white-space] 속성을 `nowrap` 으로 설정하여 방지할 수 있다.
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+}
+
+```
+
+
+
+#### 넘치는 부분을 감추기
+
+CSS에서 요소를 넘치는 부분을 처리하는 것은 [overflow] 속성이 담당한다. 대상 요소의 overflow 속성을 `hidden` 으로 설정하여 넘치는 부분을 화면에서 숨긴다.
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+```
+
+
+
+#### 숨긴 부분 처리
+
+위에서 설정한 속성들과 속성값으로 인해 숨겨지게 되는 부분을 처리하는 방식은 [text-overflow]속성이 담당하며, `ellipsis` 를 설정하면 말줄임표(...)가 숨겨지는 영역의 끝에 생성된다(오우~ 굿!).
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+```
+
+
+이상의 내용은 출력될 글자수를 서버단에서 적은 수로 제한하지 않은 경우에는 유동적인 너비에 충분히 대응된다. 다만, 한 줄로 레이아웃이 제한된다는 것에 유념해야 한다.
+
+### 여러 줄 단위로 글자 자르기
+
+다음으로 적용해 볼 것은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비와 높이에 맞게
+
+**여러 줄 단위로**
+
+자르는 법이다. 이는 위에서 다룬 내용의 반복과 추가적인 설정이 필요하다.
+
+#### 한 줄 출력의 해제 및 재설정
+
+위의 한 줄 자르기에서 `white-space` 속성을 이용해서 여러 줄에 걸쳐 출력되는 글자를 한 줄로 출력되게 했었다. 이를 해제하여 다시 여러 줄로 표현되게 해야 한다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+}
+
+```
+
+
+
+#### 줄 높이의 추가
+
+여러 줄을 출력하기 위해서는 요소의 줄 높이의 설정이 필수다. 이 줄 높이가 기준이 되어 보여주고 싶은 줄의 행수 만큼 요소의 높이를 설정하게 된다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+}
+
+```
+
+#### 요소 높이의 추가
+
+위에서 설정한 줄 높이를 기준으로 요소의 높이를 설정한다. 즉, 2줄을 보여주고 싶다면 높이를 줄 높이의 2배로 설정하고 3줄을 보여주고 싶다면 줄 높이의 3배로 설정하면 된다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+}
+
+```
+
+  
+
+`height` 대신에 `max-height` 를 설정해서 최대치만 제한해도 된다.
+
+#### 숨긴 부분 처리 추가
+
+위의 설정으로 여러 줄을 출력하고 글자를 자를 수 있지만 `text-overflow` 속성으로 숨긴 부분에 대한 처리가 되질 않는다. 여러 줄에 걸친 숨긴 처리는 현재 웹킷 계열의 브라우저에서만 지원하는 속성으로 아래와 같다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+```
+
+
+-   `text-align: left` : 글자 정렬이 양쪽 정렬이면 말 줄임표가 숨겨질 수 있으니 좌측 정렬로
+-   `word-wrap: break-word` : 잘라버릴 글자를 단어 단위로
+-   `display: -webkit-box` : 여백 삽입과 같이 유연한 높이 증가를 위해 플렉스 박스형태로 변환
+-   `-webkit-line-clamp: 3` : 보여줄 줄 갯수
+-   `-webkit-box-orient: vertical` : 플렉스 박스의 방향 설정
+
+다시 말하자면, 크롬이나 오페라, 사파리 같은 웹킷 계열의 브라우저는 여러 줄의 글자를 자르는 자신만의 방법을 제공하고 있기에 높이나 줄 높이 설정이 필요치 않는다. 다만 크로스브라우징을 위해서 필요할 뿐이다.
+
 			</script>
 			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
 		</contents>
 		<bottom>
 		<ul class="flex">
-			<li>추천수: 56</li>
+			<li>추천수: 57</li>
 			<li class="flex-g-1"></li>
 			<li class="hover-underline "><a
-				class="${article-detail__link-prev-article-class}"
-				href="java15.html">&lt; 이전글</a></li>
+				class="none"
+				href="${article-detail__link-prev-article}">&lt; 이전글</a></li>
 			<li class="hover-underline"><a
-				href="article_list_java_1.html">목록</a></li>
+				href="article_list_html&CSS_1.html">목록</a></li>
 			<li class="hover-underline "><a
 				class="${article-detail__link-next-article-class}"
-				href="java11.html"> 다음글 &gt;</a></li>
+				href="html&CSS16.html"> 다음글 &gt;</a></li>
 		</ul>
 		</bottom>
 		<div id="disqus_thread"></div>
