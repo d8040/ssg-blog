@@ -9,23 +9,22 @@
 <meta name="author" content="D.K">
 
 <!--사이트 설명-->
-<meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
+<meta name="description"
+	content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
 
 <!--본인의 홈페이지가 링크됐을때 대표로 제목-->
 <meta property="og:title" content="funAndCoding::CSS: Flex(Flexible Box)" />
 
 <!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
-<meta property="og:description" content="funAndCoding::CSS: Flex(Flexible Box)" />
+<meta property="og:description"
+	content="funAndCoding::CSS: Flex(Flexible Box)" />
 
 <!--본인의 홈페이지 주소 링크-->
 <meta property="og:url" content="phoneus.net">
 
 <!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
-<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
-
-<!-- 파비콘 적용 -->
-<link rel="shortcut icon" href="/img/favicon.ico">
-<link rel="icon" href="/img/favicon.ico">
+<meta property="og:image"
+	content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
 
 <!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
 <meta name="robots" content="index,follow">
@@ -37,10 +36,23 @@
 <!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 <title>fun and coding</title>
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
+<link rel="canonical" href="http://phoneus.net" />
+
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-
  scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-<link rel="canonical" href="http://phoneus.net" />
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/tipuesearch/tipuesearch_content.js"></script>
+<script src="/assets/tipuesearch/tipuesearch_set.js"></script>
+<script src="/assets/tipuesearch/tipuesearch.min.js"></script>
+
+<!-- 파비콘 적용 -->
+<link rel="shortcut icon" href="/img/favicon.ico">
+<link rel="icon" href="/img/favicon.ico">
 
 <!-- Scroll-Out link -->
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
@@ -78,6 +90,10 @@
 <script data-ad-client="ca-pub-5184039387564779" async
 	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+<!-- 토스트 UI highlight -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" />
+
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -103,7 +119,12 @@
 			<li class="link"><a href="#" class="flex"><span>board</span></a>
 				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
 				</ul></li>
-			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a>
+				<ul class="link">
+					<li><a href="https://www.instagram.com/dkey/"
+						class="flex flex-jc-c flex-ai-c "> <i class="fab fa-instagram"></i>
+							<span>instagram</span></a></li>
+				</ul></li>
 			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
 		</ul>
 	</nav>
@@ -116,7 +137,12 @@
 					<li class="flex"><a href="#" class="flex"><span>board</span></a>
 						<ul class=""><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
 						</ul></li>
-					<li><a href="#" class="flex"><span>link</span></a></li>
+					<li><a href="#" class="flex"><span>link</span></a>
+						<ul class="link">
+							<li><a href="https://www.instagram.com/dkey/"
+								class="flex flex-jc-c flex-ai-c "> <i
+									class="fab fa-instagram"></i> <span>instagram</span></a></li>
+						</ul></li>
 					<li><a href="#" class="flex"><span>about</span></a></li>
 				</ul>
 			</nav>
@@ -194,7 +220,7 @@
 시작하기에 앞서 간단한 얘제를 살펴봅시다.  
 float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 작성할 수 있습니다.
 
-```
+```html
 <div class="box"></div>
 <div class="box"></div>
 <div class="box"></div>
@@ -202,7 +228,7 @@ float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 �
 
 ```
 
-```
+```css
 .box {
   float: left;
 }
@@ -213,7 +239,7 @@ float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 �
 
 자세한 설명은 생략하고, 위 방법은 보기엔 단순하지만box를 제외한clear-element라는 이름(class)의 다음(next) 요소도 있어야 하기 때문에 실제 사용엔 매우 불편하며 명확하지 않은 방법으로써 많은 경우 아래 방식을 사용합니다.
 
-```
+```html
 <div class="clearfix">
   <div class="box"></div>
   <div class="box"></div>
@@ -221,7 +247,7 @@ float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 �
 </div>
 ```
 
-```
+```css
 /* IE 핵이나 기타 방식을 제외하고 가장 원리에 충실한 방법 */
 .clearfix::after {
   content: "";
@@ -238,7 +264,7 @@ float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 �
 그러면 Flexible Box(이하 Flex)는 어떻게 작성할 수 있을까요?  
 아주 간단합니다.
 
-```
+```html
 <div class="box-container">
   <div class="box"></div>
   <div class="box"></div>
@@ -246,7 +272,7 @@ float속성을 이용한 수평 구성의 경우 다음과 같이 스타일을 �
 </div>
 ```
 
-```
+```css
 .box-container {
   display: flex;
 }
@@ -297,11 +323,11 @@ display: inline-flex로 지정된 Flex Container는 Inline(Inline Block) 요소�
 
 이 속성은 단축 속성으로 Flex Items의 주 축(main-axis)을 설정하고 Items의 여러 줄 묶음(줄 바꿈)도 설정합니다.
 
-```
+```css
 flex-flow: 주축 여러줄묶음;
 ```
 
-```
+```css
 .flex-container {
   flex-flow: row-reverse wrap;
 }
@@ -317,7 +343,7 @@ Items의 주 축(main-axis)을 설정합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">row</td><td style="text-align: center;">Itmes를 수평축(왼쪽에서 오른쪽으로)으로 표시</td><td style="text-align: center;">row</td></tr><tr><td style="text-align: center;">row-reverse</td><td style="text-align: center;">Items를<span>&nbsp;</span>row의 반대 축으로 표시</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">column</td><td style="text-align: center;">Items를 수직축(위에서 아래로)으로 표시</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">column-reverse</td><td style="text-align: center;">Items를<span>&nbsp;</span>column의 반대 축으로 표시</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 flex-direction: 주축;
 ```
 
@@ -350,7 +376,7 @@ Items의 여러 줄 묶음(줄 바꿈)을 설정합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">nowrap</td><td style="text-align: center;">모든 Itmes를 여러 줄로 묶지 않음(한 줄에 표시)</td><td style="text-align: center;">nowrap</td></tr><tr><td style="text-align: center;">wrap</td><td style="text-align: center;">Items를 여러 줄로 묶음</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">wrap-reverse</td><td style="text-align: center;">Items를<span>&nbsp;</span>wrap의 역 방향으로 여러 줄로 묶음</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 flex-wrap: 여러줄묶음;
 ```
 
@@ -366,7 +392,7 @@ Items를 줄 바꿈 하려면 값으로wrap을 사용해야 합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">flex-start</td><td style="text-align: center;">Items를 시작점(flex-start)으로 정렬</td><td style="text-align: center;">flex-start</td></tr><tr><td style="text-align: center;">flex-end</td><td style="text-align: center;">Items를 끝점(flex-end)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">center</td><td style="text-align: center;">Items를 가운데 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">space-between</td><td style="text-align: center;">시작 Item은 시작점에, 마지막 Item은 끝점에 정렬되고 나머지 Items는 사이에 고르게 정렬됨</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">space-around</td><td style="text-align: center;">Items를 균등한 여백을 포함하여 정렬</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 justify-content: 정렬방법;
 ```
 
@@ -381,7 +407,7 @@ justify-content: 정렬방법;
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">stretch</td><td style="text-align: center;">Container의 교차 축을 채우기 위해 Items를 늘림</td><td style="text-align: center;">stretch</td></tr><tr><td style="text-align: center;">flex-start</td><td style="text-align: center;">Items를 시작점(flex-start)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">flex-end</td><td style="text-align: center;">Items를 끝점(flex-end)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">center</td><td style="text-align: center;">Items를 가운데 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">space-between</td><td style="text-align: center;">시작 Item은 시작점에, 마지막 Item은 끝점에 정렬되고 나머지 Items는 사이에 고르게 정렬됨</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">space-around</td><td style="text-align: center;">Items를 균등한 여백을 포함하여 정렬</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 align-content: 정렬방법;
 ```
 
@@ -399,7 +425,7 @@ Items가 한 줄일 경우 많이 사용합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">stretch</td><td style="text-align: center;">Container의 교차 축을 채우기 위해 Items를 늘림</td><td style="text-align: center;">stretch</td></tr><tr><td style="text-align: center;">flex-start</td><td style="text-align: center;">Items를 각 줄의 시작점(flex-start)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">flex-end</td><td style="text-align: center;">Items를 각 줄의 끝점(flex-end)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">center</td><td style="text-align: center;">Items를 가운데 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">baseline</td><td style="text-align: center;">Items를 문자 기준선에 정렬</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 align-items: 정렬방법;
 ```
 
@@ -423,7 +449,7 @@ Item에 숫자를 지정하고 숫자가 클수록 순서가 밀립니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">숫자</td><td style="text-align: center;">Item의 순서를 설정</td><td style="text-align: center;">0</td></tr></tbody></table>
 
-```
+```css
 order: 순서;
 ```
 
@@ -435,11 +461,11 @@ Item의 너비(증가, 감소, 기본)를 설정하는 단축 속성입니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">flex-grow</td><td style="text-align: center;">Item의 증가 너비 비율을 설정</td><td style="text-align: center;">0</td></tr><tr><td style="text-align: center;">flex-shrink</td><td style="text-align: center;">Item의 감소 너비 비율을 설정</td><td style="text-align: center;">1</td></tr><tr><td style="text-align: center;">flex-basis</td><td style="text-align: center;">Item의 (공간 배분 전) 기본 너비 설정</td><td style="text-align: center;">auto</td></tr></tbody></table>
 
-```
+```css
 flex: 증가너비 감소너비 기본너비;
 ```
 
-```
+```css
 .item {
   flex: 1 1 20px;  /* 증가너비 감소너비 기본너비 */
   flex: 1 1;  /* 증가너비 감소너비 */
@@ -464,7 +490,7 @@ Item이 가변 너비가 아니거나, 값이0일 경우 효과가 없습니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">숫자</td><td style="text-align: center;">Item의 증가 너비 비율을 설정</td><td style="text-align: center;">0</td></tr></tbody></table>
 
-```
+```css
 flex-grow: 증가너비;
 ```
 
@@ -484,7 +510,7 @@ Item이 가변 너비가 아니거나, 값이0일 경우 효과가 없습니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">숫자</td><td style="text-align: center;">Item의 감소 너비 비율을 설정</td><td style="text-align: center;">1</td></tr></tbody></table>
 
-```
+```css
 flex-shrink: 감소너비;
 ```
 
@@ -518,7 +544,7 @@ Item의 (공간 배분 전) 기본 너비를 설정합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">auto</td><td style="text-align: center;">가변 Item과 같은 너비</td><td style="text-align: center;">auto</td></tr><tr><td style="text-align: center;">단위</td><td style="text-align: center;">px, em, cm 등 단위로 지정</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 flex-basis: 기본너비;
 ```
 
@@ -536,7 +562,7 @@ align-items는 Container 내 모든 Items의 정렬 방법을 설정합니다.
 
 <table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="text-align: center;"><b>값</b></td><td style="text-align: center;"><b>의미</b></td><td style="text-align: center;"><b>기본값</b></td></tr><tr><td style="text-align: center;">auto</td><td style="text-align: center;">Container의<span>&nbsp;</span>align-items<span>&nbsp;</span>속성을 상속받음</td><td style="text-align: center;">auto</td></tr><tr><td style="text-align: center;">stretch</td><td style="text-align: center;">Container의 교차 축을 채우기 위해 Item을 늘림</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">flex-start</td><td style="text-align: center;">Item을 각 줄의 시작점(flex-start)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">flex-end</td><td style="text-align: center;">Item을 각 줄의 끝점(flex-end)으로 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">center</td><td style="text-align: center;">Item을 가운데 정렬</td><td style="text-align: center;">&nbsp;</td></tr><tr><td style="text-align: center;">baseline</td><td style="text-align: center;">Item을 문자 기준선에 정렬</td><td style="text-align: center;">&nbsp;</td></tr></tbody></table>
 
-```
+```css
 align-self: 정렬방법;
 ```
 
@@ -588,16 +614,13 @@ align-self: 정렬방법;
 	</detail>
 </main>
 
-<footer class="bottom-bar ">
+<footer class="bottom-bar flex">
 	<div class="con flex flex-ai-c flex-jc-c">
-		<a href="./" class="logo logo--mini flex flex-ai-c"> <i
-			class="fab fa-jenkins"></i> <span>Developers</span>
-		</a>
-		<div class="bottom-bar__site-info">Lorem ipsum dolor, sit amet
-			consectetur adipisicing elit. Ad impedit totam voluptas ex aliquam
-			blanditiis. Quos praesentium blanditiis nostrum voluptatum. Itaque
-			impedit explicabo porro amet cupiditate nemo maiores fuga quibusdam?</div>
+		<img src="img/copyright.png" alt="">
+		<div class="bottom-bar__site-info flex">copyright 2017.DK.All Rights
+			reserved</div>
 	</div>
 </footer>
 <script src="app.js"></script>
+
 </div>

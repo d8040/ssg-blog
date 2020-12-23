@@ -349,6 +349,9 @@ body{
   position:relative;
   display:flex;
 }
+.link i {
+  padding-right:10px;
+}
 .menu-box > ul ul {
   display:none;
   position:absolute;
@@ -594,6 +597,16 @@ naming span:nth-of-type(10) {
   width: 100%;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.content-section .content .paragraph > .toast-ui-viewer{
+  display: inline-block; 
+  width: 200px; 
+  white-space: nowrap;
+  overflow:hidden;
+  background-color: RGBA(207,207,207,0.3);
+  color:black;
+  width:500px;
+  height:500px;
+}
 .content-section .content .subheading,
 .content-section .content .paragraph {
   opacity: 1;
@@ -783,13 +796,19 @@ html {
 /* 하단 바 시작 */
 .bottom-bar {
   margin-top:30px;
-  background-color:black;
+  background-color:RGBA(34,34,34,0.9);;
   color:white;
+  z-index:10px;
 }
-
+.bottom-bar img{
+  height:auto;
+  width:30px;
+}
 .bottom-bar__site-info {
   padding-left:20px;
-  max-width: 800px;
+  max-width: 800px;  
+  align-items:center;
+  height: 30px;
 }
 /* 하단 바 끝 */
 
@@ -1003,6 +1022,10 @@ html {
     .information > ul  li, bottom > ul li{
       font-size: 12px!important;
     }
+    .content-section .content .paragraph > .toast-ui-viewer{
+    width: 350px;
+      justify-content:center;
+    }
   }
   @media(max-width:376px){
     .con-min-width {
@@ -1014,6 +1037,10 @@ html {
     .information > ul  li, bottom > ul li{
       font-size: 12px!important;
     }
+    .content-section .content .paragraph > .toast-ui-viewer{
+    width: 340px;
+      justify-content:center;
+    }
   }
   @media(max-width:320px){
     .con-min-width {
@@ -1024,6 +1051,10 @@ html {
     }
     .information > ul  li, bottom > ul li{
       font-size: 12px!important;
+    }
+    .content-section .content .paragraph > .toast-ui-viewer{
+    width: 300px;
+      justify-content:center;
     }
   }
 }
