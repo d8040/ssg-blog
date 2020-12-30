@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--사이트 저작권자-->
 <meta name="author" content="D.K">
@@ -34,7 +31,7 @@
 	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
 
 <!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>fun and coding</title>
+<title>CSS: float, clear</title>
 
 <link rel="canonical" href="http://phoneus.net" />
 
@@ -169,19 +166,25 @@
 		<link rel="stylesheet" href="app.css" />
 	</div>
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
 <!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
 <!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <main class="flex flex-jc-c flex-g-1">
 
 	<detail class="detail-box flex-jc-c flex">
@@ -195,14 +198,22 @@
 		<ul class="">
 
 
-			<li><a href="#">CSS: float, clear</a></li>
+			<li>
+				<a href="#">CSS: float, clear</a>
+			</li>
 		</ul>
 		</subject>
 		<info class="information">
 		<ul class="flex flex-dr-r">
-			<li class="flex-g-1"><a href="#">작성자: D.K</a></li>
-			<li><a href="#">조회수: 54</a></li>
-			<li><a href="#">작성일: 2020-12-20 15:36:16</a></li>
+			<li class="flex-g-1">
+				<a href="#">작성자: D.K</a>
+			</li>
+			<li>
+				<a href="#">조회수: 54</a>
+			</li>
+			<li>
+				<a href="#">작성일: 2020-12-20 15:36:16</a>
+			</li>
 		</ul>
 		</info>
 		<contents class="contents">
@@ -237,9 +248,9 @@ CSSfloat속성은 특히 국내 실무 내에서 레이아웃 설계하는 과�
 이 플로팅 모델을 이용하면 문서의 흐름과 관계없이 화면 배치를 유연하게 할 수 있습니다.
 
 CSS
-
+```css
 .box { float: value; }
-
+```
 다음은 float 의 속성값(value)입니다.
 
 -   left: 요소를 왼쪽 방향으로 부유하게 설정
@@ -289,9 +300,9 @@ clear 속성을 적용해 float 의 영향을 받지 않도록 한다는 의미�
 즉,clearfix 방법은 무조건이라기 보다 필요에 의해서 사용하는 것입니다.
 
 CSS
-
+```css
 .clearfix { clear: value; }
-
+```
 clear속성값은 다음과 같습니다.
 
 -   left: 왼쪽에 floating 된 요소를 지정 해제
@@ -308,8 +319,9 @@ clear속성값은 다음과 같습니다.
 첫 번째 float 해제 방법
 
 CSS
-
+```css
 .parent { float: left; }
+```
 
 플롯된 요소가 자식 요소일 경우에 부모요소는 자식 요소(문서 흐름에서 벗어남)를 감싸지 못하는 특징으로 인해 레이아웃이 무너진 형태처럼 보이게 됩니다. 이는 플롯을 사용하게 되면 발생되는 현상이며 이 문제를 해결하기 위해서는 플롯의 영향을 받지 않도록 해야합니다.
 
@@ -326,8 +338,9 @@ CSS
 부모 요소는 자식 요소의 높이를 인지하게 되지만 되지만 부모 요소에 정의된 인라인블럭 속성 특성 때문에 본인 영역만큼만 너비를 가지게 됩니다.
 
 CSS
-
+```css
 .parent { display: inline-block; }
+```
 
 세 번째 float 해제 방법
 
@@ -344,9 +357,9 @@ overflow 특징대로 넘치는 것을 숨겨주는 속성인데, 여기선 다�
 그런데 부모 요소가 플롯된 자식 요소로 인해 높이를 인지하지 못하고 있는 상황에서overflow: hidden;속성을 적용하게 되면 부모 요소(컨테이닝 박스)는 넘치는 요소를 숨김 처리를 하려고 하기 때문에 자식 요소의 높이를 인지하기 위해 자동으로 높이값을 계산하게 됩니다.
 
 CSS
-
+```css
 .parent { overflow: hidden; }
-
+```
 참고로overflow:hidden;속성을 적용하는 방법은 권장되지는 않습니다.
 
 예를 들어, 동적(스크립팅)으로 자식, 자손 요소들 중에서 부모 요소 박스를 벗어나서 보여주어야 될 경우에 hidden 값으로 인해 보여주고자 하는 콘텐츠를 보여줄 수 없게 되기 때문에 잘 판단하여 선택적으로 사용해야 합니다.
@@ -407,39 +420,37 @@ CSS 레이아웃과 관련된 방법은 position 속성도 있으나 차세대 �
 		</contents>
 		<bottom>
 		<ul class="flex">
-			<li>추천수: 65</li>
+			<li>추천수: 0</li>
 			<li class="flex-g-1"></li>
-			<li class="hover-underline "><a
-				class="${article-detail__link-prev-article-class}"
-				href="html&CSS10.html">&lt; 이전글</a></li>
-			<li class="hover-underline"><a
-				href="article_list_html&CSS_1.html">목록</a></li>
-			<li class="hover-underline "><a
-				class="${article-detail__link-next-article-class}"
-				href="html&CSS2.html"> 다음글 &gt;</a></li>
+			<li class="hover-underline ">
+				<a class="${article-detail__link-prev-article-class}"
+					href="article_detail_10.html">&lt; 이전글</a>
+			</li>
+			<li class="hover-underline">
+				<a href="article_list_html&CSS_1.html">목록</a>
+			</li>
+			<li class="hover-underline ">
+				<a class="${article-detail__link-next-article-class}"
+					href="article_detail_2.html"> 다음글 &gt;</a>
+			</li>
 		</ul>
 		</bottom>
 		<div id="disqus_thread"></div>
 		<script>
-			/**
-			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-			/*
-			var disqus_config = function () {
-			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			};
-			 */
-			(function() { // DON'T EDIT BELOW THIS LINE
-				var d = document, s = d.createElement('script');
-				s.src = 'https://dkey.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-			})();
-		</script>
+		var disqus_config = function () {
+		this.page.url = 'https://blog.phoneus.net/article_detail_8.html';
+		this.page.identifier = 'article_detail_8.html';
+		};		
+		(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://dkey.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
 		<noscript>
-			Please enable JavaScript to view the <a
-				href="https://disqus.com/?ref_noscript">comments powered by
+			Please enable JavaScript to view the
+			<a href="https://disqus.com/?ref_noscript">comments powered by
 				Disqus.</a>
 		</noscript>
 	</div>
@@ -456,3 +467,4 @@ CSS 레이아웃과 관련된 방법은 position 속성도 있으나 차세대 �
 <script src="app.js"></script>
 
 </div>
+<!-- </body> . <script id="dsq-count-scr" src="//dkey.disqus.com/count.js" async></script> -->
